@@ -6,9 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery fadeToggle() Method</title>
+    <!-- jquery script link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("#div1").fadeToggle();
+                $("#div2").fadeToggle("slow");
+                $("#div3").fadeToggle(3000);
+            });
+        });
+    </script>
+    <style>
+        body {
+            margin-left: 30px;
+        }
+        
+        div {
+            height: 80px;
+            width: 80px;
+        }
+        
+        #div1 {
+            background-color: red;
+        }
+        
+        #div2 {
+            background-color: blue;
+        }
+        
+        #div3 {
+            background-color: green;
+        }
+    </style>
 </head>
 
 <body>
+    <h2>fadeToggle() Method with different speed parameters
+    </h2>
+    <button>Click to Fade in/Out boxes</button>
+    <br>
+    <br>
+    <div id="div1"></div><br>
+    <div id="div2"></div><br>
+    <div id="div3"></div>
 
 </body>
 
