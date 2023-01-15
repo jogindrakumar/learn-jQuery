@@ -6,9 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery slideDown() Method</title>
+    <!-- jquery Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#flip").click(function() {
+                $("#panel").slideDown("slow");
+            });
+        });
+    </script>
+    <style>
+        #panel,
+        #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: coral;
+            border: 2px solid black;
+            color: white;
+            cursor: pointer;
+        }
+        
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
+    <div id="flip">Click to slide down pannel
+    </div>
+    <div id="panel">Like, Share ,subscribe</div>
 
 </body>
 
